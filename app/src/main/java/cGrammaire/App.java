@@ -6,7 +6,7 @@ public class App {
 
       System.out.println("----Affichage des symboles récupérés dans le fichier----");
       l.getListesSymbole();
-      System.out.println("----");
+      System.out.println("-----------------");
 
       Regle rg = new Regle();
       Regle rgB = new Regle();
@@ -14,7 +14,7 @@ public class App {
 
       rgB.construireDeveloppement("B::=x|y");
       rgC.construireDeveloppement("C::=zy");
-      rg.construireDeveloppement("A::=aB|kxB");
+      rg.construireDeveloppement("A::=aB|kxB|yC");
 
       Symbole A;
       Symbole C;
